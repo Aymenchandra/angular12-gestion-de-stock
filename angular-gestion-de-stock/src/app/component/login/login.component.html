@@ -1,0 +1,31 @@
+<div class="containerForm">
+    
+    <div class="formLogo">
+    </div>
+     <div class="formContents">
+         <div class="formControl">
+             <label>E-mail :<span style="color:#d63230">*</span></label>
+             <input type="email" name="Email">
+         </div>
+         <div class="formControl">
+             <label>Mot de passe :<span style="color:#d63230">*</span><span><fa-icon [icon]="Eye"(click)="showPassword()"></fa-icon></span></label>
+             <input type="password" name="Password" [type]="hide ? 'password':'text'">
+         </div>
+         
+         <div class="formButton">
+             <button class="leftbtn" routerLink="/gestiondestock">Se Connecter</button>
+             <button class="rightbtn" routerLink="/register">S'inscrire</button>
+         </div>
+
+         <div class="ResetPassword">
+             <span>Mot de passe oublié ?</span>
+         </div>
+         <div class="cotanct">
+             <div>Vous pouvez nous contacter par téléphone au<br>
+                (+687) 27 08 01 ou par mail à contact@vaf.nc. A bientôt.</div>
+         </div>
+         <br>
+     </div>
+    </div> 
+    <router-outlet></router-outlet>
+

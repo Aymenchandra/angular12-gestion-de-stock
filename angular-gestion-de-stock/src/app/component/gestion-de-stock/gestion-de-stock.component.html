@@ -1,0 +1,169 @@
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened=true>
+    <div class="SmallLogo"></div>
+    <div class="EspaceClient"><mat-icon class="icons">home</mat-icon><span
+        matBadge="1" matBadgeOverlap="false" matBadgePosition="below after">Espace
+        Client</span></div>
+    <span class="span">MENU</span>
+    <div class="nav">
+      <label for="btn" class="button">
+        <mat-icon class="icons" routerLink="/Saisir-facutre">inventory</mat-icon><span>Facture</span>
+      </label>
+      <label for="btn-2" class="button">
+        <mat-icon class="icons">language</mat-icon><span>Statistiques</span><mat-icon
+          class="icons icon">expand_more</mat-icon>
+      </label>
+      <input type="checkbox" id="btn-2" name="R1" value="1">
+      <ul class="menu">
+        <li><a routerLink="/Statistique">Statistique</a></li>
+      </ul>
+      <label for="btn-3" class="button">
+        <mat-icon class="icons">description</mat-icon><span>Mes factures</span><mat-icon
+          class="icons icon">expand_more</mat-icon>
+      </label>
+      <input type="checkbox" id="btn-3" name="R1" value="1">
+      <ul class="menu">
+        <li><a  routerLink="/product">Products</a></li>
+      </ul>
+      <label for="btn-4" class="button">
+        <mat-icon class="icons">info</mat-icon><span>Supports</span><mat-icon
+          class="icons icon">expand_more</mat-icon>
+      </label>
+      <input type="checkbox" id="btn-4" name="R1" value="1">
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+      </ul>
+      <label>
+        <mat-icon class="icons">chat_bubble_outline</mat-icon>Ouvrir une demande
+      </label>
+      <label>
+        <mat-icon class="icons">attach_money</mat-icon>affiliés
+      </label>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="header">
+      <div class="notification">
+        <span><mat-icon>check_box</mat-icon></span>
+        <span><mat-icon>chat_bubble_outline</mat-icon></span>
+        <span><mat-icon>mail</mat-icon></span>
+        <span><mat-icon>calendar_today</mat-icon></span>
+      </div>
+      <div class="edit">
+        <span><mat-icon class="icons">flag</mat-icon>francais</span>
+        <span><mat-icon class="icons">crop_free</mat-icon></span>
+        <span><mat-icon matBadge="1" matBadgeOverlap="false"
+            matBadgePosition="above after" class="icons">notifications</mat-icon></span>
+        <span>User Name <mat-icon class="icons">account_circle</mat-icon></span>
+      </div>
+    </div>
+    <div class="title"><mat-icon class="icons">home</mat-icon>Accueil /
+      <span class="underTitle">Espace client</span>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2 bloc"><mat-icon class="icons EditIcon">local_shipping</mat-icon><div
+            class="numberSubtitle">0</div><div class="subtitle underline1">Mes
+            Services</div></div>
+        <div class="col-sm-2 bloc"><mat-icon class="icons EditIcon">language</mat-icon><div
+            class="numberSubtitle">0</div><div class="subtitle underline2">Mes
+            Domaines</div></div>
+        <div class="col-sm-2 bloc"><mat-icon class="icons EditIcon">question_answer</mat-icon><div
+            class="numberSubtitle">1</div><div class="subtitle underline3">Mes
+            Demandés</div></div>
+        <div class="col-sm-2 bloc2"><mat-icon class="icons EditIcon">credit_card</mat-icon><div
+            class="numberSubtitle">0</div><div class="subtitle underline4">Facture</div></div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-3 Menubloc">
+          <div class="nav">
+            <label for="btn-5" class="button">
+              <mat-icon class="icons">person</mat-icon><span>Vos Informations</span><mat-icon
+                class="icons icon">expand_more</mat-icon>
+            </label>
+            <input type="checkbox" id="btn-5" name="R1" value="1">
+            <ul class="menu">
+              <li> <span class="name"> Mohamed Amine Ben Rhouma</span><span
+                  class="text"><br>2 rue 9058 jbel jloud<br>Tunis,1046<br>Tunisia
+                  <div class="updateButton"><button mat-button><mat-icon>edit</mat-icon>
+                      Mettre a jour </button></div></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 Card OverLineCard">
+          <div class="title">
+            <div class="titleCard"><mat-icon class="icons">calculate</mat-icon>Factures
+              Impayées</div>
+            <button><mat-icon class="icons cardsIcon">east</mat-icon>Afficher tout</button>
+          </div>
+          <div class="text">Vous avez 2 facture(s) impayée(s) pour un total de
+            26.66TND</div>
+          <br><br>
+          <div class="backgroundColor"></div>
+        </div>
+        <div class="col"></div>
+        <div class="col-sm-4 Card OverLineCard2">
+          <div class="title">
+            <div class="titleCard"><mat-icon class="icons">local_shipping</mat-icon>Vos
+              produits/services actifs</div>
+            <button><mat-icon class="icons">add</mat-icon>Afficher tout</button>
+          </div>
+          <div class="text">Vous n'avez aucun produit/service.<span
+              style="color: aqua;cursor: pointer;">passer une commande</span></div>
+          <br><br>
+          <div class="backgroundColor"></div>
+        </div>
+        <div class="col-sm-3 Menubloc"><div class="nav">
+            <label for="btn-6" class="button">
+              <mat-icon class="icons">folder_open</mat-icon><span>Contacts</span><mat-icon
+                class="icons icon">expand_more</mat-icon>
+            </label>
+            <input type="checkbox" id="btn-6" name="R1" value="1">
+            <ul class="menu">
+              <li><span class="text2"><br>Aucun contact Trouvé... <div
+                    class="AddContact"><button mat-button><mat-icon>add</mat-icon>
+                      Noveau contact.. </button></div></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 Card OverLineCard3">
+          <div class="title">
+            <div class="titleCard"><mat-icon class="icons">question_answer</mat-icon>Derniéeres demandes
+              </div>
+            <button><mat-icon class="icons">add</mat-icon>Ouvrir une demande</button>
+          </div>
+          <div class="text">Aucue demande. Si vous avez besoin d'aide, <span
+            style="color: aqua;cursor: pointer;">passer une commande</span>  </div>
+          <br><br>
+          <div class="backgroundColor"></div>
+        </div>
+        <div class="col"></div>
+        <div class="col-sm-4 Card OverLineCard4">
+          <div class="title">
+            <div class="titleCard"><mat-icon class="icons">language</mat-icon>Vos
+              produits/services actifs</div>
+            <button><mat-icon class="icons">add</mat-icon>Afficher tout</button>
+
+          </div>
+          <div class="text"><div class="input-group">
+            <input type="text" class="form-control">
+            <button class="btn btn-outline-secondary" type="button" style="background-color: rgba(0, 128, 0, 0.699); color: white;">Enregistrement</button>
+            <button class="btn btn-outline-secondary" type="button" style="border-color:white ;">Transfert</button>
+          </div></div>
+          <br><br>
+          <div class="backgroundColor"></div>
+        </div>
+        <div class="col-sm-3 Menubloc"></div>
+            
+
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

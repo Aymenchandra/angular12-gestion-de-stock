@@ -1,0 +1,26 @@
+
+.categorie
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:rgba(0, 0, 0, 0.644);
+    margin: 5px auto;
+    background-color: rgba(128, 128, 128, 0.466);
+    max-width: 90%;
+    padding: 10px 25px;
+}
+.paidCategorie
+{
+    background-color:#d63230 ;
+    color: white;
+    padding:5px;
+    border-radius:10px ;
+}
+.paidCategorie .icons
+{
+    position: relative;
+    top:3px;
+    font-size:16px;
+    margin-right: -5px;
+}

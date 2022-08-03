@@ -1,0 +1,87 @@
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened=true>
+    <div class="SmallLogo" routerLink="/gestiondestock"></div>
+    <div class="EspaceClient"><mat-icon class="icons">home</mat-icon><span
+        matBadge="1" matBadgeOverlap="false" matBadgePosition="below after">Espace
+        Client</span></div>
+    <span class="span">MENU</span>
+    <div class="nav">
+      <label for="btn" class="button">
+        <mat-icon class="icons" routerLink="/Saisir-facutre">inventory</mat-icon><span>Facture</span>
+      </label>
+      <label for="btn-2" class="button">
+        <mat-icon class="icons">language</mat-icon><span>Statistiques</span><mat-icon
+          class="icons icon">expand_more</mat-icon>
+      </label>
+      <input type="checkbox" id="btn-2" name="R1" value="1">
+      <ul class="menu">
+        <li><a routerLink="/Statistique">Statistique</a></li>
+      </ul>
+      <label for="btn-3" class="button">
+        <mat-icon class="icons">description</mat-icon><span>Mes factures</span><mat-icon
+          class="icons icon">expand_more</mat-icon>
+      </label>
+      <input type="checkbox" id="btn-3" name="R1" value="1">
+      <ul class="menu">
+        <li><a routerLink="/product">Product</a></li>
+      </ul>
+      <label for="btn-4" class="button">
+        <mat-icon class="icons">info</mat-icon><span>Supports</span><mat-icon
+          class="icons icon">expand_more</mat-icon>
+      </label>
+      <input type="checkbox" id="btn-4" name="R1" value="1">
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+      </ul>
+      <label>
+        <mat-icon class="icons">chat_bubble_outline</mat-icon>Ouvrir une demande
+      </label>
+      <label>
+        <mat-icon class="icons">attach_money</mat-icon>affiliés
+      </label>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="header">
+      <div class="notification">
+        <span><mat-icon>check_box</mat-icon></span>
+        <span><mat-icon>chat_bubble_outline</mat-icon></span>
+        <span><mat-icon>mail</mat-icon></span>
+        <span><mat-icon>calendar_today</mat-icon></span>
+      </div>
+      <div class="edit">
+        <span><mat-icon class="icons">flag</mat-icon>francais</span>
+        <span><mat-icon class="icons">crop_free</mat-icon></span>
+        <span><mat-icon matBadge="1" matBadgeOverlap="false"
+            matBadgePosition="above after" class="icons">notifications</mat-icon></span>
+        <span>User Name <mat-icon class="icons">account_circle</mat-icon></span>
+      </div>
+    </div>
+    <div class="row header2">
+      <div class="title col-10"><mat-icon class="icons">home</mat-icon>Accueil /
+        <span class="underTitle">Produits</span>
+      </div>
+      <button mat-button class="col-2" routerLink="/add-product"><mat-icon class="icons">add_circle</mat-icon>Ajouter
+        Un Produit</button>
+    </div>
+    <div class="row cards">
+      <div class="card1 col-4">
+        <h2 class="title"><mat-icon class="icons">table_rows</mat-icon>categories</h2>
+        <div class="content">
+          <div class="Allcategorie" >Tous Les categories</div>
+          <app-categorys></app-categorys>
+        </div>
+      </div>
+      <div class="col-1"></div>
+      <div class="card2 col-7">
+        <h2 class="title"><mat-icon class="icons">table_rows</mat-icon>Liste Des
+          Produits</h2>
+        <div class="col-6">
+          <app-products ></app-products>
+        </div>
+
+      </div>
+    </div>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

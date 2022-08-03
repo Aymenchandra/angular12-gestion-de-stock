@@ -1,0 +1,54 @@
+.EspaceClient
+{
+    color: rgb(99, 99, 235);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.span
+{
+    margin: 30px;
+    color: rgb(99, 99, 235);
+}
+.nav label
+{
+    color: rgb(99, 99, 235);
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    cursor: pointer;
+    width: 100%; 
+}
+.icon
+{
+    float: right;
+    line-height: 30px;
+}
+.nav ul
+{
+    list-style: none;
+    width: 100%;
+    border-radius: 5px;
+    display: none;
+}
+
+[id^=btn]:checked + ul
+{
+    display: block;
+}
+/* ------ */
+.nav ul li a
+{
+    color: rgb(99, 99, 235);
+    text-decoration: none;
+}
+.nav ul li a:hover,
+.nav ul li label:hover
+{
+   color: rgb(69, 69, 250);
+}
+.nav input
+{
+    display: none;
+}

@@ -1,0 +1,152 @@
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened=true>
+    <div class="SmallLogo" routerLink="/gestiondestock"></div>
+    <div class="EspaceClient"><mat-icon class="icons">home</mat-icon><span
+        matBadge="1" matBadgeOverlap="false" matBadgePosition="below after">Espace
+        Client</span></div>
+    <span class="span">MENU</span>
+    <div class="nav">
+      <label for="btn" class="button">
+        <mat-icon class="icons" routerLink="/Saisir-facutre">inventory</mat-icon><span>Facture</span>
+      </label>
+      <label for="btn-2" class="button">
+        <mat-icon class="icons">language</mat-icon><span>Statistiques</span><mat-icon
+          class="icons icon">expand_more</mat-icon>
+      </label>
+      <input type="checkbox" id="btn-2" name="R1" value="1">
+      <ul class="menu">
+        <li><a routerLink="/Statistique">Statistique</a></li>
+      </ul>
+      <label for="btn-3" class="button">
+        <mat-icon class="icons">description</mat-icon><span>Mes factures</span><mat-icon
+          class="icons icon">expand_more</mat-icon>
+      </label>
+      <input type="checkbox" id="btn-3" name="R1" value="1">
+      <ul class="menu">
+        <li><a routerLink="/product">Product</a></li>
+      </ul>
+      <label for="btn-4" class="button">
+        <mat-icon class="icons">info</mat-icon><span>Supports</span><mat-icon
+          class="icons icon">expand_more</mat-icon>
+      </label>
+      <input type="checkbox" id="btn-4" name="R1" value="1">
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+      </ul>
+      <label>
+        <mat-icon class="icons">chat_bubble_outline</mat-icon>Ouvrir une demande
+      </label>
+      <label>
+        <mat-icon class="icons">attach_money</mat-icon>affiliés
+      </label>
+    </div>
+  </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="container">
+        <div class="row">
+          <div class="col Cards1 safeCard">
+            <div class="titleCard">
+              <h3>Revenue</h3>
+              <span>Monthly</span>
+            </div>
+            <h1>72.00</h1>
+            <div class="footerCard">
+              <h5 class="Safe">Total Revenue</h5>
+              <span class="Safe">98%<mat-icon class="icons Safe">trending_up</mat-icon></span>
+            </div>
+          </div>
+          <div class="col Cards1 dangerCard">
+            <div class="titleCard">
+              <h3>Frais</h3>
+              <span>Today</span>
+            </div>
+            <h1>592.80</h1>
+            <div class="footerCard">
+              <h5 class="Danger">Total Frais</h5>
+              <span class="Danger">38%<mat-icon class="icons Danger">trending_down</mat-icon></span>
+            </div>
+          </div>
+          <div class="col Cards1 safeCard">
+            <div class="titleCard">
+              <h3>Commands</h3>
+              <span>Total</span>
+            </div>
+            <h1>2.00</h1>
+            <div class="footerCard">
+              <h5 class="Safe">Commands</h5>
+              <span class="Safe">20%<mat-icon class="icons Safe">trending_up</mat-icon></span>
+            </div>
+          </div>
+          <div class="col Cards1 dangerCard">
+            <div class="titleCard">
+              <h3>Clients</h3>
+              <span>Low Value</span>
+            </div>
+            <h1>51</h1>
+            <div class="footerCard">
+              <h5 class="Danger">Nombre Clients</h5>
+              <span class="Danger">38%<mat-icon class="icons Danger">trending_down</mat-icon></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="title">
+            <h2>Commands</h2>
+          </div>
+          <div class="col-8 Cards2">
+            <ngx-charts-bar-vertical
+            [view]="view1"
+            scheme="fire"
+            [results]="BarChart"
+            [xAxis]="showXAxis"
+            [yAxis]="showYAxis"
+            [legend]="showLegend"
+            [showXAxisLabel]="showXAxisLabel"
+            [showYAxisLabel]="showYAxisLabel"
+            (select)="onSelect($event)">
+          </ngx-charts-bar-vertical>
+          </div>
+          <div class="col-4 Cards2">
+            <h1>2,346</h1>
+            <div class="ProgressBarTitle">
+              <h4 >Total Orders In Period</h4>
+              <span class="Danger">48%<mat-icon class="icons Danger">trending_up</mat-icon></span>
+            </div>
+            <mat-progress-bar mode="buffer" value="48"  color="warn"></mat-progress-bar>
+            <h1>4,422</h1>
+            <div class="ProgressBarTitle">
+              <h4>Orders In Last Month</h4>
+              <span class="Danger">60%<mat-icon class="icons Danger">trending_up</mat-icon></span>
+            </div>
+            <mat-progress-bar mode="buffer" value="60"  color="warn"></mat-progress-bar>
+            <h1>9,180</h1>
+            <div class="ProgressBarTitle">
+              <h4>Monthly Income From Orders</h4>
+              <span class="Danger">22%<mat-icon class="icons Danger">trending_up</mat-icon></span>
+            </div>
+            <mat-progress-bar mode="buffer" value="22" color="warn"></mat-progress-bar>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6  Cards3">
+            <h1 class="text-center">Product</h1>
+            <ngx-charts-pie-grid
+            [view]="view2"
+            [results]="Product"
+            (select)="onSelect($event)">
+            </ngx-charts-pie-grid>
+          </div>
+          <div class="col-sm-6 Cards3">
+            <h1 class="text-center">Client</h1>
+            <ngx-charts-pie-grid
+            [view]="view2"
+            [results]="Client"
+            (select)="onSelect($event)">
+            </ngx-charts-pie-grid>
+          </div>
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  
+   

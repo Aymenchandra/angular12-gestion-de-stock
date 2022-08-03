@@ -1,0 +1,7 @@
+<app-product-items 
+*ngFor="let produit of produits" 
+[produit]="produit"
+(onDeletedProduct)="delete(produit)"
+
+>
+</app-product-items>

@@ -1,0 +1,159 @@
+.EspaceClient
+{
+    color: rgb(99, 99, 235);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.span
+{
+    margin: 30px;
+    color: rgb(99, 99, 235);
+}
+.nav label
+{
+    color: rgb(99, 99, 235);
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    cursor: pointer;
+    width: 100%; 
+}
+.icon
+{
+    float: right;
+    line-height: 30px;
+}
+.nav ul
+{
+    list-style: none;
+    width: 100%;
+    border-radius: 5px;
+    display: none;
+}
+
+[id^=btn]:checked + ul
+{
+    display: block;
+}
+/* ------ */
+.nav ul li a
+{
+    color: rgb(99, 99, 235);
+    text-decoration: none;
+}
+.nav ul li a:hover,
+.nav ul li label:hover
+{
+   color: rgb(69, 69, 250);
+}
+.nav input
+{
+    display: none;
+}
+/* nav-content */
+mat-sidenav-content
+{
+    color:rgba(0, 0, 0, 0.637);
+}
+.Cards1
+{
+    border: 1px solid grey;
+    margin: 15px 10px;
+    background-color:rgba(128, 128, 128, 0.123);
+}
+.dangerCard
+{
+    border-top: 5px solid rgba(170, 23, 23, 0.938);   
+}
+.safeCard
+{
+    border-top: 5px solid rgba(23, 170, 23, 0.938);
+
+}
+.titleCard,.footerCard,.ProgressBarTitle
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.titleCard,.row .title
+{
+    border-bottom: 1px solid grey;
+    color:rgba(0, 0, 0, 0.637);
+}
+.titleCard span
+{
+    color: white;
+    padding: 2px 15px;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5px;
+}
+.safeCard .titleCard span
+{   
+    background-color: rgba(23, 170, 23, 0.938);
+}
+.dangerCard .titleCard span
+{   
+    background-color: rgba(170, 23, 23, 0.938);
+}
+.safeCard .titleCard span:hover
+{   
+    background-color: rgb(23, 170, 23);
+    cursor: pointer;
+}
+.dangerCard .titleCard span:hover
+{   
+    background-color: rgb(170, 23, 23);
+    cursor: pointer;
+}
+.titleCard h3
+{
+    margin-top: 10px ;
+    font-weight: 600;
+}
+.Cards1 h1 
+{
+    font-size: 42px;
+    margin: 15px 0;
+}
+.footerCard .icons
+{
+    font-size: 20px;
+}
+.Safe
+{
+    color: rgba(23, 170, 23, 0.938);
+}
+.Danger
+{
+    color: rgba(170, 23, 23, 0.938);
+}
+
+.row .title
+{
+    margin-bottom: 30px;
+}
+.ProgressBarTitle
+{
+    margin-top: -10px ;
+}
+.ProgressBarTitle span
+{
+    margin-bottom: 25px;
+}
+mat-progress-bar
+{
+    margin-top:-15px;
+}
+ngx-charts-pie-chart,ngx-charts-bar-vertical
+{
+    padding:1px;
+}
+.Cards3
+{
+    border-right: 1px solid rgba(0, 0, 0, 0.315);
+    border-left: 1px solid rgba(0, 0, 0, 0.315);
+}

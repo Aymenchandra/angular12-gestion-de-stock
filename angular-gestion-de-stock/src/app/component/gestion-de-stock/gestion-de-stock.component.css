@@ -1,0 +1,295 @@
+.EspaceClient
+{
+    color: rgb(99, 99, 235);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.span
+{
+    margin: 30px;
+    color: rgb(99, 99, 235);
+}
+.nav label
+{
+    color: rgb(99, 99, 235);
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    cursor: pointer;
+    width: 100%; 
+}
+.icon
+{
+    float: right;
+    line-height: 30px;
+}
+.nav ul
+{
+    list-style: none;
+    width: 100%;
+    border-radius: 5px;
+    display: none;
+}
+
+[id^=btn]:checked + ul
+{
+    display: block;
+}
+/* ------ */
+.nav ul li a
+{
+    color: rgb(99, 99, 235);
+    text-decoration: none;
+}
+.nav ul li a:hover,
+.nav ul li label:hover
+{
+   color: rgb(69, 69, 250);
+}
+.nav input
+{
+    display: none;
+}
+/* nav-contect */
+mat-sidenav-content .header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #a0a1a7;
+}
+mat-sidenav-content .header .notification
+{
+    margin: 10px;
+    color: #cdced1;
+}
+mat-sidenav-content .header .notification span,mat-sidenav-content .header .edit span
+{
+    margin: 0.6rem;
+    cursor: pointer;
+}
+mat-sidenav-content .header .notification span:hover,mat-sidenav-content .header .edit span:hover
+{
+    color:#d63230;
+}
+mat-sidenav-content .title .icons
+{
+    font-size: 22px;
+    margin-right:-3px;
+}
+mat-sidenav-content .title
+{
+    font-size: 13px;
+    font-weight: 400;
+    color:rgb(193, 194, 194);
+    margin: 5px 0;
+}
+mat-sidenav-content .underTitle
+{
+    color:rgb(99, 99, 235);
+    cursor: pointer;
+}
+mat-sidenav-content .bloc
+{
+    border-right: 1px solid grey;
+}
+mat-sidenav-content .bloc,mat-sidenav-content .bloc2
+{
+    color: rgb(99, 99, 235);
+    background-color: rgba(128, 128, 128, 0.137);
+    padding:10px;
+    margin-top:40px;
+}
+
+mat-sidenav-content .numberSubtitle
+{
+    font-size: 32px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+mat-sidenav-content .subtitle
+{
+    color:grey;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+mat-sidenav-content .underline1
+{
+    border-bottom: 3px solid aqua;
+}
+mat-sidenav-content .underline2
+{
+    border-bottom: 3px solid green;
+}
+mat-sidenav-content .underline3
+{
+    border-bottom: 3px solid red;
+}
+mat-sidenav-content .underline4
+{
+    border-bottom: 3px solid orange;
+}
+mat-sidenav-content .EditIcon
+{
+    float: right;
+    line-height: 30px;
+    font-size: 48px ;
+    padding: 15px 50px;
+}
+.Menubloc .nav .button
+{
+    background-color: rgba(128, 128, 128, 0.137);
+    border-radius: 5px 5px 0 0;
+    padding: 5px 10px;
+}
+
+.Menubloc .nav ul li .name
+{
+    font-weight: 500;
+    color: grey;
+    margin-left: -18px;
+
+}
+.Menubloc .nav ul li .text
+{
+    color: rgb(173, 172, 172);
+    font-weight: 300;
+}
+.Menubloc .nav ul li  .updateButton
+{
+    margin-left: -32px;
+    margin-right: 40px ;
+    text-align: center;
+    width: 244px;
+    background-color: rgba(128, 128, 128, 0.137);
+    border-radius:  0 0 5px 5px;
+}
+.updateButton button
+{
+    background-color: rgba(0, 128, 0, 0.699);
+    color: white;
+    width: 80%;
+    margin: 10px;
+}
+
+.OverLineCard .title button
+{
+    background: rgba(255, 0, 0, 0.596);
+}
+.OverLineCard2 .title button
+{
+    background: rgba(255, 166, 0, 0.596);
+}
+.OverLineCard3 .title button
+{
+    background: rgba(0, 255, 255, 0.733);
+}
+.OverLineCard4 .title button
+{
+    background: rgba(0, 128, 0, 0.699);
+}
+.OverLineCard .title button:hover
+{
+    background: rgba(255, 0, 0, 0.795);
+}
+.OverLineCard2 .title button:hover
+{
+    background: rgba(255, 166, 0, 0.801);
+}
+.OverLineCard3 .title button:hover
+{
+    background: rgba(0, 255, 255, 0.884);
+}
+.OverLineCard4 .title button:hover
+{
+    background: rgba(0, 128, 0, 0.87);
+}
+.Card .title button
+{
+    border: none;
+    padding-top:4px ;
+    padding-right:10px;
+    border-radius:10px ;
+    color:white;
+}
+
+.Card .title
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Card .titleCard
+{
+    color:rgba(0, 0, 0, 0.664);
+    font-size: 14px;
+    font-weight: 500;
+}
+.Card,.Card2
+{
+    margin: 20px 0;
+    border: 1px solid rgba(128, 128, 128, 0.568);
+}
+.OverLineCard
+{
+    border-top: 4px solid rgba(255, 0, 0, 0.596);
+}
+.OverLineCard2
+{
+    border-top: 4px solid rgba(255, 166, 0, 0.596);
+}
+.OverLineCard3
+{
+    border-top: 4px solid rgba(0, 255, 255, 0.733);
+}
+.OverLineCard4
+{
+    border-top: 4px solid rgba(0, 128, 0, 0.699);
+}
+/* azezae */
+.title button .icons
+{
+    position: relative;
+    font-size:15px;
+    top:3.2px;
+}
+
+.Card .backgroundColor
+{
+    margin-left:-12px;
+    height: 20px;
+    width: 360px;
+    background-color: rgba(128, 128, 128, 0.137);
+}
+.Card .text
+{
+    color:grey ;
+    font: 400;
+}
+.Card .nav .button
+{
+    background: red;
+}
+.Menubloc .nav ul li  .AddContact
+{
+    margin-left: -32px;
+    margin-right: 40px ;
+    margin-top:20px;
+    text-align: center;
+    width: 244px;
+    background-color: rgba(128, 128, 128, 0.137);
+    border-radius:  0 0 5px 5px;
+}
+.AddContact button
+{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.644);
+    width: 80%;
+    margin: 10px;
+}

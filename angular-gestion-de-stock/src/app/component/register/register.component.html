@@ -1,0 +1,48 @@
+<form class="containerForm">
+    
+    <div class="formTitle">
+        <h2>Inscrivez-vous</h2>
+    </div>
+     <div class="formContents">
+         <div class="formControlNames">
+         <div class="formControlName">
+             <label>Nom :<span style="color:#d63230">*</span></label>
+             <input type="text" name="Nom">
+        </div>
+        <div class="formControlName">            
+             <label>Prenom :<span style="color:#d63230">*</span></label>
+             <input type="text" name="Prenom">
+         </div>
+        </div>
+         <div class="formControl">
+             <label>E-mail :<span style="color:#d63230">*</span></label>
+             <input type="email" name="Email">
+         </div>
+         <div class="formControl">
+             <label>Confirmer Votre E-mail :<span style="color:#d63230">*</span></label>
+             <input type="email" name="Email">
+         </div>
+         <div class="formControl">
+            <label>Mot de passe :<span style="color:#d63230">*</span><span><fa-icon class="icon1" [icon]="Eye1"(click)="showPassword1()"></fa-icon></span></label>
+            <input type="password" name="Password" [type]="hide1 ? 'password':'text'"><br>
+        </div>
+        <div class="formControl">
+            <label>Confirmer Votre Mot de passe :<span style="color:#d63230">*</span><span><fa-icon class="icon2" [icon]="Eye2"(click)="showPassword2()"></fa-icon></span></label>
+            <input type="password" name="Password" [type]="hide2 ? 'password':'text'"><br>
+        </div>
+         <div class="captcha">
+            <form>
+                <ngx-recaptcha2 #captchaElem
+                  [siteKey]="siteKey">
+                </ngx-recaptcha2>
+              </form>
+         </div>
+         <div class="formButton">
+             <button class="leftbtn">S'inscrire</button>
+             <button class="rightbtn"  routerLink="/login">Se Connecter</button>
+         </div>
+         <br>
+     </div>
+    </form> 
+
+    <router-outlet></router-outlet>

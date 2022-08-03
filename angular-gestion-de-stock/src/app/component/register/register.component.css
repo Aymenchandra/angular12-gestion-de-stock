@@ -1,0 +1,88 @@
+.containerForm .formTitle h2
+{
+    text-align: center;
+    background-color: white;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    color:rgb(87, 87, 87);
+}
+
+.formControlNames input
+{
+    width:90%
+}
+
+.formControlNames 
+{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-right: -20px;
+}
+.formControlName label
+{
+    display: block;
+}
+
+.formContents .captcha
+{
+    margin-left:10%;
+}
+.icon2
+    {
+        position:absolute;
+        top:74.8%;
+        right:38.5%;
+    }
+.icon1
+{
+    position:absolute;
+    top:62.2%;
+    right:38.5%;
+}
+@media only screen and (max-width: 1256px)
+{
+.icon1
+{
+    position:absolute;
+    top:73.1%;
+    right:36%;
+}
+.icon2
+{
+    position:absolute;
+    top:87.8%;
+    right:36%;
+}
+}
+@media only screen and (max-width: 977px)
+{
+.icon1
+{
+    position:absolute;
+    
+    right:32%;
+}
+.icon2
+{
+    position:absolute;
+    
+    right:32%;
+}
+}
+@media only screen and (max-width: 576px)
+{
+.icon1
+{
+    position:absolute;
+    
+    right:20%;
+}
+.icon2
+{
+    position:absolute;
+    
+    right:20%;
+}
+}

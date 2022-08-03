@@ -1,0 +1,23 @@
+
+<div class="card-product">
+  <div class="image">
+    <img class="image__img" [src]="produit.image"
+      alt="Bricks">
+    <div class="image__overlay image__overlay--primary">
+      <p class="image__description">
+        <mat-icon (click)="deleteProduct(produit.id!)">remove_circle</mat-icon>
+        <mat-icon>edit</mat-icon>
+      </p>
+    </div>
+  </div>
+  <div class="description">
+    <h1 class="text-center">{{produit.nom}}</h1>
+    <div><mat-icon class="icons">payments</mat-icon>prix:
+      {{produit.prixAchat}}Dt</div>
+    <div><mat-icon class="icons">production_quantity_limits</mat-icon>Quantité
+      en stock: {{produit.quantite}} unité</div>
+    <div><mat-icon class="icons">schedule</mat-icon>Ajoutée le: 15/12/2000
+      18:12:40:06</div>
+  </div>
+</div>
+  

@@ -1,0 +1,59 @@
+
+    <form class="containerForm" (ngSubmit)="OnSubmit()">
+      <div class="formTitle">
+        <h2 class="text-center">Ajouter votre Produit</h2>
+      </div>      
+      <div class="mb-3 row blocImage">
+        <label for="staticEmail" class="col-sm-3">Image de Produit:</label>
+        <div class="col-sm-9">
+          <input type="file" name="photo" [(ngModel)]="photo">
+        </div>
+      </div>
+      <div class="mb-3 row formControl">
+        <label for="staticEmail" class="col-sm-3" >Nom de Produit:</label>
+        <div class="col-sm-9">
+          <input type="text" name="nom" placeholder="Nom de Produit" [(ngModel)]="nom" />
+        </div>
+      </div>
+      <div class="mb-3 row formControl">
+        <label for="staticEmail" class="col-sm-3">Description de Produit:</label>
+        <div class="col-sm-9">
+          <input type="text" name="description" placeholder="Description de Produit" [(ngModel)]="description">
+        </div>
+      </div>
+      <div class="mb-3 row formControl">
+        <label for="staticEmail" class="col-sm-3">Quantité de Produit:</label>
+        <div class="col-sm-9">
+          <input type="text" name="quantite" placeholder="Quantité de Produit" [(ngModel)]="quantite">
+        </div>
+      </div>
+      <div class="mb-3 row formControl formControlPrix">
+        <label for="staticEmail" class="col-sm-3">Prix de Produit:</label>
+        <div class="col-sm-9">
+          <input type="text" name="prixAchat" placeholder="Prix d'Achat" [(ngModel)]="prixAchat">
+          <input type="text" name="prixVentee" placeholder="Prix de Vente"[(ngModel)]="prixVente">
+        </div>
+      </div>
+      <div class="mb-3 row formControl">
+        <label for="staticEmail" class="col-sm-3">Stock faible:</label>
+        <div class="col-sm-9">
+          <input type="text" name="stockFaible" placeholder="Stock faible" [(ngModel)]="stockFaible">
+        </div>
+      </div>
+      <div class="mb-3 row formControl">
+        <label for="staticEmail" class="col-sm-3">Date d'expiration:</label>
+        <div class="col-sm-9">
+          <input type="date" name="dateExpiration" [(ngModel)]="dateExpiration">
+        </div>
+      </div>
+      <div class="mb-3 row formControl">
+        <label for="staticEmail" class="col-sm-3">Categorie de Produit:</label>
+        <div class="col-sm-9">
+          <input type="text" name="categorie" placeholder="Categorie de Produit" [(ngModel)]="categorie">
+        </div>
+      </div>
+      <div class="formButton">
+        <button class="leftbtn" type="submit">Ajouter</button>
+        <button class="rightbtn" type="reset">Annuler</button>
+      </div>
+    </form>

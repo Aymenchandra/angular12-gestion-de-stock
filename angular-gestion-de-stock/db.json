@@ -1,0 +1,24 @@
+{
+  "produit": [
+    {
+      "id": 1,
+      "image": "string",
+      "nom": "Chocolat",
+      "description": "string",
+      "quantite": 13,
+      "prixAchat": 10,
+      "dateExpiration": "string",
+      "categorie": "Sucré"
+    },
+    {
+      "id": 2,
+      "image": "string",
+      "nom": "Chocolat",
+      "description": "string",
+      "quantite": 13,
+      "prixAchat": 10,
+      "dateExpiration": "string",
+      "categorie": "Sucré"
+    }
+  ]
+}

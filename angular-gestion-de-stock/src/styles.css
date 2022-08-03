@@ -1,0 +1,168 @@
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body
+{
+    background-color:#F1F3F7;  
+    height:50%;
+}
+.formLogo
+{
+    background-image: url("assets/images/Logo.png");
+    background-repeat: no-repeat;
+    width: 300px; 
+    height: 130px; 
+    margin: 30px auto;
+    cursor: pointer;
+}
+.containerForm
+{
+    max-width:430px;
+    min-height: 100%;
+    margin:50px auto;
+    background-color: white;
+}
+
+.containerForm .formContents
+{
+    background-color: white;
+    padding-right:25px;
+    padding-left:25px;
+}
+
+.formControl input
+{
+    width: 100%;
+}
+.formControl input,.formControlName input
+{
+    padding: 17px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    outline: none;
+    height: 20px;
+}
+
+.formControl label,.formControlName label
+{
+    display: block;
+    font-family: sans-serif;
+    font-weight: bold;
+    color:rgb(87, 87, 87);
+}
+.formControl input:focus ,.formControlName input:focus
+{
+    border-color: #d63230;
+    box-shadow: 2px 2px  #d63230;
+}
+.formButton
+{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px 0;
+    margin: 5px 65px;
+}
+.formButton button
+{
+    cursor: pointer;
+}
+.formButton .leftbtn
+{
+    
+    background-color: #d63230;
+    border-color: #d63230;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    padding: 11px 20px;
+    font-weight:600;
+    font-size: 15px;
+}
+
+.formButton .rightbtn
+{
+    color:#d63230;
+    text-decoration: underline;
+    background-color: white;
+    border:none;
+    font-weight: 600;
+    padding:11px 20px;
+    font-size: 15px;
+    font-weight: 300;
+}
+.formButton .leftbtn:hover  
+{
+    background-color: #cc0401;
+}
+.formButton .rightbtn:hover
+{
+    color: #cc0401;
+}
+fa-icon
+{
+    cursor: pointer;
+}
+
+
+.SmallLogo
+{
+    background-color: red;
+    background-image: url("assets/images/SmallLogo.png");
+    background-repeat: no-repeat;
+    width: 150px; 
+    height: 65px; 
+    cursor: pointer;
+    margin: 50px auto;
+}
+.navbar
+{
+    justify-content: space-between;
+}
+.navbar span
+{
+    padding-right:1rem ;
+    cursor: pointer;
+    font-size: 16px;
+}
+.navbar span:hover
+{
+    color:#d63230;
+}
+.icons
+{
+    position: relative;
+    top:5.2px;
+    margin-right:5px;
+}
+
+mat-sidenav-container
+{
+    height:100vh;
+}
+mat-sidenav,mat-sidenav-content
+{
+    padding: 8px 25px;
+}
+mat-sidenav-content
+{
+    border: 1px solid white;
+    max-height: 95vh ;
+    max-width:100% ;
+    margin: 20px 20px;
+    margin-left: 300px !important;
+    border-radius: 10px;
+    background: white;
+}
+mat-sidenav
+{
+    width: 260px;
+}
+mat-sidenav button
+{
+    position: relative;
+    left:42%;
+    color:grey;
+}
+

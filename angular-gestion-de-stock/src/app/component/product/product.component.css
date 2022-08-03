@@ -1,0 +1,147 @@
+.EspaceClient
+{
+    color: rgb(99, 99, 235);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.span
+{
+    margin: 30px;
+    color: rgb(99, 99, 235);
+}
+.nav label
+{
+    color: rgb(99, 99, 235);
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    cursor: pointer;
+    width: 100%; 
+}
+.icon
+{
+    float: right;
+    line-height: 30px;
+}
+.nav ul
+{
+    list-style: none;
+    width: 100%;
+    border-radius: 5px;
+    display: none;
+}
+
+[id^=btn]:checked + ul
+{
+    display: block;
+}
+/* ------ */
+.nav ul li a
+{
+    color: rgb(99, 99, 235);
+    text-decoration: none;
+}
+.nav ul li a:hover,
+.nav ul li label:hover
+{
+   color: rgb(69, 69, 250);
+}
+.nav input
+{
+    display: none;
+}
+/* nav-contect */
+mat-sidenav-content .header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #a0a1a7;
+}
+mat-sidenav-content .header .notification
+{
+    margin: 10px;
+    color: #cdced1;
+}
+mat-sidenav-content .header .notification span,mat-sidenav-content .header .edit span
+{
+    margin: 0.6rem;
+    cursor: pointer;
+}
+mat-sidenav-content .header .notification span:hover,mat-sidenav-content .header .edit span:hover
+{
+    color:#d63230;
+}
+.header2 .title .icons
+{
+    font-size: 22px;
+    margin-right:-3px;
+}
+.header2 .title
+{
+    font-size: 13px;
+    font-weight: 400;
+    color:rgb(193, 194, 194);
+    margin-top: -10px;
+    cursor: pointer;
+}
+.header2 .underTitle
+{
+    color:rgb(99, 99, 235);
+    cursor: pointer;
+}
+.header2
+{
+    margin-top: 15px ;
+}
+.header2 button
+{
+    background-color: #d63230;
+    color: white;
+}
+.header2 button .icons
+{
+    position: relative;
+    font-size: 25px;
+    top:-1px;
+}
+.cards 
+{
+    margin-top: 15px;
+}
+.cards .title
+{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    background-color: #d63230;
+    border-radius: 5px;
+    padding: 3px;
+}
+.card2
+{
+    background-color: rgba(128, 128, 128, 0.26);
+    padding: 10px;
+}
+.card1
+{
+    background-color: rgba(128, 128, 128, 0.26);
+    max-height: 330px;
+    padding: 15px;
+}
+.categorie,.Allcategorie
+{
+    margin: 5px auto;
+    background-color: rgba(128, 128, 128, 0.466);
+    max-width: 90%;
+    padding: 10px 25px;
+}
+.Allcategorie
+{
+    color:teal;
+}
+
+
